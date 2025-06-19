@@ -1,0 +1,84 @@
+/* Posts Container */
+#posts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Post Styling */
+.post {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    transition: opacity 0.3s ease;
+}
+
+.post h2 {
+    margin-bottom: 15px;
+}
+
+.post h2 a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+    color: #0073aa;
+}
+
+.post .excerpt {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Load More Button */
+#load-more {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#load-more:hover {
+    background: #005177;
+}
+
+#load-more:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #0073aa;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.ajax-error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #c62828;
+    border-radius: 0 4px 4px 0;
+    transition: opacity 0.5s ease;
+}
