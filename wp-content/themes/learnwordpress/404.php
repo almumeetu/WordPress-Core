@@ -7,7 +7,7 @@
  * @package learnwordpress
  */
 
-get_header();
+get_header();   
 ?>
 
 	<main id="primary" class="site-main">
